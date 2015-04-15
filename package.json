@@ -1,0 +1,12 @@
+{
+  "name": "jquery-translate",
+  "description": "jQuery plugin for client-side translations",
+  "version": "0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wsidl/jQuery-translate"
+  },
+  "devDependencies":{
+    "jquery": ">1.0"
+  }
+}
