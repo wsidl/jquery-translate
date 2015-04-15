@@ -50,7 +50,7 @@ It's also possible to create larger translations where the phrasing structure ha
 
 ```javascript
 $.translate.add_codes({
-    'some_text': ['English {{txt}}','{{txt}} espa#&241;ol','Texte fran&#231;ais'],
+    'some_text': ['English {{txt}}','{{txt}} espa#&241;ol','{{txt}} fran&#231;ais'],
     'text_word': ['Text','Texte','Texte']
 });
 
@@ -68,7 +68,7 @@ If the provided parameter in the format exists in the available codes, it will g
 
 ```javascript
 $.translate.add_codes({
-    'some_text': ['English {{txt}}','{{txt}} espa#&241;ol','Texte fran&#231;ais'],
+    'some_text': ['English {{txt}}','{{txt}} espa#&241;ol','{{txt}} fran&#231;ais'],
     'txt': ['Text','Texte','Texte']
 });
 $.translate.get_text('some_text');
