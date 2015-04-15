@@ -88,4 +88,7 @@ $.translate.add_codes({
 
 Using this reference is now useful so when `$.translate.set_language('en');` is used, the library will find all jQuery lookups (identified by the '!') and apply translations automatically.
 
-
+# Feature idea references
+After creating a first implementation and not fully satisfied, I tried a number of plugins and stand-alone libraries that provided inspiration and for the work done here. I have tried:
+- [https://github.com/recurser/jquery-i18n](recurser's jquery-i18n): Most ideas came from this repository. Although more complex, the idea of a lightweight but powerful library was useful. I could have used this, but didn't work well for the features needed for my projects.
+- [https://github.com/kostia/jquery.li18n](kostia's li18n): Small library and works quickly. Got the idea for parameterized formats from this library.
