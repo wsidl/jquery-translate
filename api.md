@@ -3,13 +3,13 @@ layout: page
 title: jquery-translate API
 ---
 
-### Class: $.translate
+# Class: $.translate
 
-#### Description
+## Description
 
 The "translate" class incorporates a series of functions for controlling language translations within a website. All actions are carried out immediately without requiring loading external files such as translation files or accessing external APIs.
 
-#### Properties
+## Properties
 
 Name | Type | Description
 ---- | ---- | ---
