@@ -5,7 +5,7 @@
  *
  * Licensed under the MIT license.
  *
- * Version: 1.0 (15 Apr 2015)
+ * Version: 1.1 (16 Apr 2015)
  */
 (function($) {
 
@@ -69,6 +69,17 @@
           }
         }
       })
+    },
+
+    /**
+     * get_language()
+     *
+     * Returns the two-character acronym of the currently active language.
+     *
+     * @returns {*} string: language code
+     */
+    get_language: function(){
+      return lang.code_index[lang.k];
     },
 
     /**
