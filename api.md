@@ -23,4 +23,4 @@ Name | Parameters | Return Type | Description
 set_language | l = (opt) "language code" | void | <p>Sets the current implementation of the website to the specified language.</p><p>If no parameter is specified, will read the language code from the user's browser. And if the found language is not provided, will use the language specified by the property "default_language"</p>
 get_language |  | string | Returns the two-character language code of the currently used language
 add_codes | a = "Dictionary of translations" | void | <p>The method to insert translation dictionaries into the class. The dictionary is defined by the two-letter language code which points to an array value. The array must contain the same number of values as what is defined in the property "code_index"</p><code>$.translate.code_index = {<br />&nbsp;&nbsp;"en": 0,<br />&nbsp;&nbsp;"es":1<br/>}<br/>$.translate.add_codes({<br />&nbsp;&nbsp;title: ["English Title", "Titre espa&#241;ol"]<br/>});</code>
-
+get_text | k = "Code Key"<br/>o = (opt) "key value references" | string | ts
