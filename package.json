@@ -1,12 +1,30 @@
 {
   "name": "jquery-translate",
+  "version": "1.0.0",
   "description": "jQuery plugin for client-side translations",
-  "version": "0.1",
+  "main": "jquery.translate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/wsidl/jquery-translate"
   },
-  "devDependencies":{
-    "jquery": ">1.0"
-  }
+  "keywords": [
+    "i18n",
+    "internationalization",
+    "language",
+    "translate",
+    "translations",
+    "format",
+    "formatting",
+    "jquery-plugin",
+    "ecosystem:jquery"
+  ],
+  "author": "Will Siddall",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wsidl/jQuery-translate/issues"
+  },
+  "homepage": "https://github.com/wsidl/jQuery-translate"
 }
