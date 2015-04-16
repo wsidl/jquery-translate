@@ -4,7 +4,7 @@
   "version": "0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wsidl/jQuery-translate"
+    "url": "https://github.com/wsidl/jquery-translate"
   },
   "devDependencies":{
     "jquery": ">1.0"

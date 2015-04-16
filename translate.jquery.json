@@ -7,14 +7,14 @@
     "email": "will.siddall@gmail.com"
   },
   "license": [
-    {"type": "MIT", "url" :"https://github.com/wsidl/jQuery-translate/blob/master/LICENSE"}
+    {"type": "MIT", "url" :"https://github.com/wsidl/jquery-translate/blob/master/LICENSE"}
   ],
   "dependencies":{"jquery": "*"},
   "description": "Lightweight client-side translation library with automatic element translations and phrasing formats",
   "keywords": ["i18n","internationalization","language","translate","translation","format","formatting"],
-  "homepage": "https://github.com/wsidl/jQuery-translate",
-  "docs": "https://github.com/wsidl/jQuery-translate",
-  "bugs": "https://github.com/wsidl/jQuery-translate",
+  "homepage": "https://github.com/wsidl/jquery-translate",
+  "docs": "https://github.com/wsidl/jquery-translate",
+  "bugs": "https://github.com/wsidl/jquery-translate",
   "maintainers": [
     {"name": "Will Siddall", "email": "will.siddall@gmail.com"}
   ]
