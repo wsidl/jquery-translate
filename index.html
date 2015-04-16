@@ -3,4 +3,5 @@ layout: page
 title: Home
 ---
 
-{% include index.md %}
+{% capture index_include %}{% include index.md %}{% endcapture %}
+{{ index_include | markdownify }}
