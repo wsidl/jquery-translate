@@ -1,0 +1,17 @@
+title: Siddall
+tagline: Find anything from web projects, Python scripts, and various other code samples
+url: http://wsidl.github.io
+baseurl: /
+author:
+  name: Will Siddall
+  url: http://wsidl.github.io
+  email: will.siddall@gmail.com
+  givenName: Will
+  familyName: Siddall
+  github: wsidl
+  twitter: willsiddall
+
+github:
+  repo: https://github.com/wsidl/wsidl.github.io
+
+analytics: UA-61936865-1
