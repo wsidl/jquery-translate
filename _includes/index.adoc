@@ -1,4 +1,6 @@
 = About
+:layout: page
+:title: Home
 
 _jQuery-translate_ is a jQuery plugin for fast and format intensive client-side translations in javascript. It is based off of a number of existing translation (listed below) and licensed under the http://www.opensource.org/licenses/mit-license.php[MIT license].
 
