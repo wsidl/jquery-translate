@@ -43,7 +43,7 @@ $.translate.add_codes({
 This text can then be referenced by it's key code. Each time the language changes, calling this line again will return the new translation.
 
 ```javascript
-$('#txt_placeholder').text($.translate.get_text('some_text'));
+$('#txt_placeholder').html($.translate.get_text('some_text'));
 ```
 
 It's also possible to create larger translations where the phrasing structure has changed, providing a more complex translation. Using the above example:
