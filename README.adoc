@@ -69,7 +69,7 @@ $.translate.get_text('some_text',{txt:'Text'});
 $.translate.get_text('some_text',{txt:['Text','Texte','Texte']});
 
 // Or read from an existing code set
-$.translate.get_text('some_text',{txt:$.translate.get_text('text_work')});
+$.translate.get_text('some_text',{txt:$.translate.get_text('text_word')});
 ----
 
 If the provided parameter in the format exists in the available codes, it will grab that (unless otherwise overwritten by the inputted options
