@@ -99,6 +99,7 @@
      * @returns {*} string : translated string
      */
     get_text: function (k, o) {
+      if(k=="")return this;
       try {
         var t = lang.j[k][lang.k];
         var e = $.extend({}, lang.j, o);
@@ -110,9 +111,9 @@
           })
         }
         if (t.match(/{{.*}}/))$.error("Missing option key for '" + k + "'");
-        return lang.o(t);
+        return $.proxy(lang.o, this, t);
       } catch (e) {
-        return lang.o(k);
+        return $.proxy(lang.o, this, k);
       }
     }
   };
