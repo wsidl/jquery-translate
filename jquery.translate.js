@@ -21,6 +21,8 @@
      * k                 : Currently active language (as index number)
      * default_language  : Default language to support if no other language is supported
      */
+  // Saving instance of original text element
+    o: $.fn.text,
     code_index: {},
     j: {},
     k: 0,
@@ -35,7 +37,8 @@
      * @param a dict : Dictionary of new code elements
      */
     add_codes: function (a) {
-      lang.j = $.extend({}, lang.j, a)
+      lang.j = $.extend({}, lang.j, a);
+      return lang;
     },
 
     /**
@@ -68,7 +71,8 @@
             c.val(lang.get_text(a))
           }
         }
-      })
+      });
+      return lang;
     },
 
     /**
@@ -106,11 +110,12 @@
           })
         }
         if (t.match(/{{.*}}/))$.error("Missing option key for '" + k + "'");
-        return t
+        return lang.o(t);
       } catch (e) {
-        console.log("Error loading label: " + k)
+        return lang.o(k);
       }
     }
   };
   $.translate = lang;
+  $.fn.text = lang.get_text;
 })(jQuery);

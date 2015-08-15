@@ -21,11 +21,11 @@ After loading the library through HTML, the list of languages must be supplied. 
 
 [source,javascript]
 ----
-$.translate.code_index = {[
+$.translate.code_index = {
     'en':0,
     'es':1,
     'fr':2
-]};
+};
 $.translate.default_language = 'es';
 $.translate.set_language();
 ----
@@ -97,6 +97,18 @@ $.translate.add_codes({
 ----
 
 Using this reference is now useful so when `$.translate.set_language(&#39;en&#39;);` is used, the library will find all jQuery lookups (identified by the '!') and apply translations automatically.
+
+The "get_text" method also overrides jQuery's "text" method. This allows for specifying the key directly to an object without extra calls. If the provided text is not in the key list, it will set the value of the provided text instead.
+
+[source,javascript]
+----
+$.translate.add_codes({
+  'txt':['Text', 'Texte','Texte']
+});
+$('td.new_text').text('txt');
+----
+
+As with any manual text placement, this text will not be converted when the language is changed.
 
 = Feature idea references
 
