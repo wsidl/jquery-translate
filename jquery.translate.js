@@ -5,9 +5,7 @@
  *
  * Licensed under the MIT license.
  *
- * Version: 1.3 (19 Aug 2015)
- *
- * Author: Will Siddall (will.siddall@gmail.com)
+ * Version: 1.1 (16 Apr 2015)
  */
 (function($) {
 
@@ -64,9 +62,8 @@
         console.log("Language not supported, add index for", l);
         l = p.default_language
       }
-      if(p.k==p.code_index[l]){
-        return this
-      }
+      if(p.k==undefined)p.k=l;
+      if(p.k==p.code_index[l])return this
       var ol = p.get_language();
       p.k = p.code_index[l];
       $.each(p.j, function (a, b) {
@@ -97,7 +94,12 @@
      * @returns {*} string: language code
      */
     get_language: function(){
-      return $.inArrray(p.k, p.code_index);
+      $.each(p.code_index, function(k,v){
+        if(v== p.k) {
+          return k;
+        }
+      });
+      return p.default_language;
     },
 
     /**
