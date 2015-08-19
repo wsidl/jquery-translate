@@ -63,8 +63,8 @@
         l = p.default_language
       }
       if(p.k==undefined)p.k=l;
-      if(p.k==p.code_index[l])return this
       var ol = p.get_language();
+      if(p.k==p.code_index[l])return this;
       p.k = p.code_index[l];
       $.each(p.j, function (a, b) {
         if (a.substr(0, 1) == '!') {
@@ -94,12 +94,13 @@
      * @returns {*} string: language code
      */
     get_language: function(){
+      var d = p.default_language;
       $.each(p.code_index, function(k,v){
         if(v== p.k) {
-          return k;
+          return d = k;
         }
       });
-      return p.default_language;
+      return d;
     },
 
     /**
