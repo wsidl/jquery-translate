@@ -13,6 +13,7 @@ There are a number of features that are available in this library that provides 
 - *jQuery lookup keys*: By using an exclamation mark (!) at the beginning of the key, it notifies the library that the key is a jQuery lookup string. This will also identify to the library that when the language changes, to automatically assign the new translations to these elements.
 - *Language by browser*: If no language is defined by the user or by the developer, the library will determine the user's browser's working language and display that language. If the defined language is not supported, a warning will be displayed in the browser's console and will switch to the default language.
 - *Default language*: In the case that no language can be determined, all cases will switch to the default language. Statically, this is 'en', but can be changed.
+- *Callback on language change*: When a language change is necessary, a trigger method is available to handle custom requirements such as assisting to change classes, attributes, or perform other changes.
 
 # Usage
 
@@ -63,7 +64,7 @@ If the provided parameter in the format exists in the available codes, it will g
     $.translate.add_codes({
         'some_text': ['English {{txt}}','{{txt}} espa#&241;ol','{{txt}} fran&#231;ais'],
         'txt': ['Text','Texte','Texte']
-    });
+    })
     $.translate.get_text('some_text');
     // will output 'English Text' or:
     $.translate.get_text('some_text', {txt:'Phrase'});
@@ -85,7 +86,13 @@ The "get_text" method also overrides jQuery's "text" method. This allows for spe
     });
     $('td.new_text').text('txt');
 
-As with any manual text placement, this text will not be converted when the language is changed.
+As with any manual text placement, this text will not be converted when the language is changed. To support language changes though, a callback method is available (`change`) that will allow supporting these custom calls
+
+    $.translate.add_codes({
+        '!#txt_placeholder': ['English Text','Texte espa#&241;ol','Texte fran#&231;ais']
+    }).change(function(old_lg, new_lg){
+        $('#txt_placeholder').removeClass('lg_'+old_lg).addClass('lg_'+new_lg);
+    }
 
 # Feature idea references
 
