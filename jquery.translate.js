@@ -5,7 +5,7 @@
  *
  * Licensed under the MIT license.
  *
- * Version: 1.1 (16 Apr 2015)
+ * Version: 1.3 (19 Aug 2015)
  */
 (function($) {
 
